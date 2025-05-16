@@ -55,12 +55,12 @@ Cole sua chave da OpenAI. A chave será armazenada de forma segura.
 
 ## 📦 Comandos Disponíveis
 
-| Comando                                    | Descrição                                |
-| ------------------------------------------ | ---------------------------------------- |
-| `GPT Copilot: Definir Chave da API`        | Salva sua API key                        |
-| `GPT Copilot: Remover Chave da API`        | Deleta a chave armazenada                |
-| `GPT Copilot: Corrigir Código Selecionado` | Envia o trecho selecionado para correção |
-| `GPT Copilot: Abrir Chat`                  | Abre o painel lateral com o chat GPT     |
+| Comando                                                         | Descrição                                |
+| --------------------------------------------------------------- | ---------------------------------------- |
+| `GPT Copilot: Set API Key`                                      | Salva sua API key                        |
+| `GPT Copilot: Apagar chave da OpenAI`                           | Deleta a chave armazenada                |
+| `GPT Copilot: Corrigir seleção com VSCode GPT Copilot (OpenAI)` | Envia o trecho selecionado para correção |
+| `GPT Copilot: Perguntar ao GPT em chat`                         | Abre o painel lateral com o chat GPT     |
 
 ## 🧠 Como Usar
 
@@ -72,7 +72,7 @@ Cole sua chave da OpenAI. A chave será armazenada de forma segura.
 ### 2. Correção de Código
 
 * Selecione uma ou mais linhas de código.
-* Execute: `GPT Copilot: Corrigir Código Selecionado`.
+* Selecione e faça `Click Direito` no código selecionado e va para a opção `GPT Copilot: Corrigir seleção com VSCode GPT Copilot (OpenAI)`.
 
 ### 3. Chat com o GPT
 
