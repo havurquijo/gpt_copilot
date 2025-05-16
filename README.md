@@ -54,13 +54,13 @@ Você pode consultar os valores atualizados diretamente na [página oficial de p
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/gpt-copilot-vscode.git
+git clone https://github.com/havurquijo/gpt_copilot.git
 ```
 
 2. Abra no VS Code:
 
 ```bash
-code gpt-copilot-vscode
+code gpt_copilot
 ```
 
 3. Compile e inicie a extensão (F5 para abrir uma janela de teste)
@@ -112,10 +112,8 @@ Cole sua chave da OpenAI. A chave será armazenada de forma segura.
 ### Estrutura principal:
 
 * `extension.ts` – Código da extensão principal
-* `getWebviewContent.ts` – HTML + JS do painel de chat
-* `askOpenAI.ts` – Comunicação com a API da OpenAI
+* `openai.ts` – Comunicação com a API da OpenAI
 * `utils.ts` – Manipulação da chave da API e helpers
-* `correctSelectedLines.ts` – Correção de código selecionado
 
 ## 🧰 Requisitos
 
@@ -129,5 +127,5 @@ Este projeto é licenciado sob a [MIT License](LICENSE).
 
 ---
 
-Desenvolvido com 💙 por \[Hermes A V Urquijo].
+Desenvolvido com 💙 por Hermes A V Urquijo.
 
