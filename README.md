@@ -1,8 +1,3 @@
-Claro! Com base em toda nossa conversa, aqui está um `README.md` completo e profissional para seu projeto de extensão do VS Code que integra a API da OpenAI:
-
----
-
-````markdown
 # 🧠 GPT Copilot for VS Code
 
 Extensão para o Visual Studio Code que integra a API da OpenAI para fornecer sugestões inteligentes, correções de código e um painel de chat interativo — tudo diretamente no seu editor favorito.
@@ -53,7 +48,7 @@ Extensão para o Visual Studio Code que integra a API da OpenAI para fornecer su
 Execute o comando:
 
 ```bash
-> GPT Copilot: Definir Chave da API
+> GPT Copilot: Set API key
 ```
 
 Cole sua chave da OpenAI. A chave será armazenada de forma segura.
@@ -112,5 +107,5 @@ Este projeto é licenciado sob a [MIT License](LICENSE).
 
 ---
 
-Desenvolvido com 💙 por \[hermes A V Urquijo].
+Desenvolvido com 💙 por \[Hermes A V Urquijo].
 

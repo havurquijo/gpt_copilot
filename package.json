@@ -7,6 +7,9 @@
     "engines": {
         "vscode": "^1.100.0"
     },
+    "icon": "images/icon.png",
+    "license": "MIT",
+    "licenseFile": "LICENSE",
     "repository": {
         "type": "git",
         "url": "https://github.com/havurquijo/gpt_copilot"
