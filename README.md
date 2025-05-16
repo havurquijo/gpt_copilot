@@ -1,6 +1,28 @@
 # 🧠 GPT Copilot for VS Code
 
-Extensão para o Visual Studio Code que integra a API da OpenAI para fornecer sugestões inteligentes, correções de código e um painel de chat interativo — tudo diretamente no seu editor favorito.
+
+## 👋 Ei, você aí!
+
+![GPT Copilot VSCode Demo](https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif)
+
+Já está explorando as APIs do GPT e não quer pagar pelo GitHub Copilot?
+Mas ainda assim quer **todas aquelas funcionalidades incríveis direto no VS Code**?
+
+Então este projeto é pra você! 🎯
+
+Com esta extensão, você usa **sua própria chave da OpenAI** para ter um assistente inteligente dentro do seu VS Code – com sugestões inline, correções de código, e até um painel de chat amigável. Tudo isso sem depender de serviços pagos adicionais!
+
+
+## Descrição 
+
+Extensão para o Visual Studio Code que integra a API da OpenAI para fornecer sugestões inteligentes, correções de código e um painel de chat interativo — tudo diretamente no seu editor favorito. 
+
+
+## Custo
+
+Utilizando uma chave de API da OpenAI com o modelo `gpt-3.5-turbo`, o custo estimado mensal é de aproximadamente **US\$ 3 a US\$ 4**, dependendo do volume de uso.
+Você pode consultar os valores atualizados diretamente na [página oficial de preços da OpenAI](https://openai.com/pricing).
+
 
 ## ✨ Funcionalidades
 
