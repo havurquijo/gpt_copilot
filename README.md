@@ -53,15 +53,15 @@ Você pode consultar os valores atualizados diretamente na [página oficial de p
 ## 🚀 Instalação
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/gpt-copilot-vscode.git
-````
+```bash
+git clone https://github.com/seu-usuario/gpt-copilot-vscode.git
+```
 
 2. Abra no VS Code:
 
-   ```bash
-   code gpt-copilot-vscode
-   ```
+```bash
+code gpt-copilot-vscode
+```
 
 3. Compile e inicie a extensão (F5 para abrir uma janela de teste)
 
