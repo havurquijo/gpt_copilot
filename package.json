@@ -1,0 +1,75 @@
+{
+    "name": "vscode-gpt-copilot",
+    "displayName": "VSCode GPT Copilot",
+    "description": "Extension with GPT-based code suggestions and chat",
+    "version": "1.0.0",
+    "publisher": "hvurquijo",
+    "engines": {
+        "vscode": "^1.100.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/havurquijo/gpt_copilot"
+    },
+    "categories": [
+        "Other",
+        "AI",
+        "Programming Languages"
+    ],
+    "activationEvents": [
+        "onStartupFinished",
+        "onInlineChatSession:openai-inline-chat"
+    ],
+    "main": "./out/extensions.js",
+    "contributes": {
+        "inlineChat": [
+            {
+                "viewId": "openai-inline-chat",
+                "when": "editorTextFocus"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "gptCopilot.correctSelectedLine",
+                    "when": "editorTextFocus && !editorReadonly"
+                }
+            ]
+        },
+        "commands": [
+            {
+                "command": "gptCopilot.setApiKey",
+                "title": "Set API Key"
+            },
+            {
+                "command": "gptCopilot.deleteApiKey",
+                "title": "Apagar chave da OpenAI"
+            },
+            {
+                "command": "gptCopilot.ask",
+                "title": "Perguntar ao GPT em chat"
+            },
+            {
+                "command": "gptCopilot.correctSelectedLine",
+                "title": "Corrigir seleção com VSCode GPT Copilot (OpenAI)"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "clean": "rimraf out"
+    },
+    "devDependencies": {
+        "@types/node": "^18.0.0",
+        "@types/node-fetch": "^2.6.12",
+        "@types/vscode": "^1.100.0",
+        "@vscode/test-electron": "^2.3.2",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.0",
+        "node-fetch": "^2.7.0"
+    }
+}

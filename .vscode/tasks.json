@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "compile",
+      "type": "shell",
+      "command": "${HOME}/.nvm/versions/node/v18.20.8/bin/npm",
+      "args": ["run", "compile"],
+      "options": {
+        "env": {
+          "PATH": "${HOME}/.nvm/versions/node/v18.20.8/bin:${env:PATH}"
+        }
+      },
+      "problemMatcher": []
+    }
+  ]
+}
