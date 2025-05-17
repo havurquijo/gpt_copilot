@@ -2,7 +2,7 @@
     "name": "vscode-gpt-copilot",
     "displayName": "VSCode GPT Copilot",
     "description": "Extension with GPT-based code suggestions and chat",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "publisher": "hvurquijo",
     "engines": {
         "vscode": "^1.100.0"
