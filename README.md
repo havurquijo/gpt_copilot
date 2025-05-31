@@ -1,40 +1,43 @@
 # 🧠 GPT Copilot for VS Code
 
+## 🔗 Relevant links
 
-## 👋 Ei, você aí!
+[![VS Code Marketplace](https://img.shields.io/badge/VSCode-Marketplace-blue?logo=visualstudiocode&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=hvurquijo.vscode-gpt-copilot&ssr=false#overview)
+[![GitHub](https://img.shields.io/badge/GitHub-Repositório-181717?logo=github)](https://github.com/havurquijo/gpt_copilot)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-hvurquijo-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hvurquijo)
+
+
+## 👋 Hey, you there!
 
 ![GPT Copilot VSCode Demo](https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif)
 
-Já está explorando as APIs do GPT e não quer pagar pelo GitHub Copilot?
-Mas ainda assim quer **todas aquelas funcionalidades incríveis direto no VS Code**?
+Already exploring the GPT APIs and don't want to pay for GitHub Copilot?
+But still want **all those awesome features right in VS Code**?
 
-Então este projeto é pra você! 🎯
+Then this project is for you! 🎯
 
-Com esta extensão, você usa **sua própria chave da OpenAI** para ter um assistente inteligente dentro do seu VS Code – com sugestões inline, correções de código, e até um painel de chat amigável. Tudo isso sem depender de serviços pagos adicionais!
+With this extension, you use **your own OpenAI key** to have an intelligent assistant inside your VS Code – with inline suggestions, code corrections, and even a friendly chat panel. All without relying on additional paid services!
 
+## Description
 
-## Descrição 
+Extension for Visual Studio Code that integrates the OpenAI API to provide intelligent suggestions, code corrections, and an interactive chat panel — all directly in your favorite editor.
 
-Extensão para o Visual Studio Code que integra a API da OpenAI para fornecer sugestões inteligentes, correções de código e um painel de chat interativo — tudo diretamente no seu editor favorito. 
+## Cost
 
+Using an OpenAI API key with the `gpt-3.5-turbo` model, the estimated monthly cost is approximately **US$ 3 to US$ 4**, depending on usage volume.
+You can check updated prices directly on the [official OpenAI pricing page](https://openai.com/pricing).
 
-## Custo
+## ✨ Features
 
-Utilizando uma chave de API da OpenAI com o modelo `gpt-3.5-turbo`, o custo estimado mensal é de aproximadamente **US\$ 3 a US\$ 4**, dependendo do volume de uso.
-Você pode consultar os valores atualizados diretamente na [página oficial de preços da OpenAI](https://openai.com/pricing).
+- 💬 **Chat Panel** with interface integrated into VS Code
+- 🤖 **Real-time suggestions** in the editor (smart autocomplete)
+- 🛠️ **Correction of selected code snippets**
+- 📂 **File upload** as context for the model
+- 🌙 Support for the current VS Code theme (light/dark)
+- 🔐 OpenAI API key management
+- 💡 Support for multiple programming languages
 
-
-## ✨ Funcionalidades
-
-- 💬 **Painel de Chat** com interface integrada ao VS Code
-- 🤖 **Sugestões em tempo real** no editor (autocomplete inteligente)
-- 🛠️ **Correção de trechos de código selecionados**
-- 📂 **Upload de arquivos** como contexto para o modelo
-- 🌙 Suporte ao tema atual do VS Code (claro/escuro)
-- 🔐 Gerenciamento de chave da API OpenAI
-- 💡 Suporte a múltiplas linguagens de programação
-
-## 🧪 Linguagens Suportadas
+## 🧪 Supported Languages
 
 - JavaScript
 - TypeScript
@@ -48,105 +51,99 @@ Você pode consultar os valores atualizados diretamente na [página oficial de p
 - HTML, CSS
 - JSON, Markdown
 - Shell Script
-- _(e outras via suporte global opcional)_
+- _(and others via optional global support)_
 
-## 🚀 Instalação da extensão
+## 🚀 Extension Installation
 
-1. Abra o Visual Studio Code.
-2. Vá para a aba de extensões (Ctrl + Shift + X).
-3. Pesquise por "VSCode GPT Copilot".
-4. Clique em "Instalar" na extensão com autor "Hermes A V Urquijo".
-![Imagem da Extensão](images/README_8.png)
+1. Open Visual Studio Code.
+2. Go to the extensions tab (Ctrl + Shift + X).
+3. Search for "VSCode GPT Copilot".
+4. Click "Install" on the extension by author "Hermes A V Urquijo".
+![Extension Image](images/README_8.png)
 
+## 🚀 Project Installation
 
-## 🚀 Instalação do projeto
-
-1. Clone o repositório:
+1. Clone the repository:
 ```bash
 git clone https://github.com/havurquijo/gpt_copilot.git
 ```
 
-2. Abra no VS Code:
+2. Open in VS Code:
 
 ```bash
 code gpt_copilot
 ```
 
-3. Compile e inicie a extensão (F5 para abrir uma janela de teste)
+3. Compile and start the extension (F5 to open a test window)
 
-## 🔐 Configuração da API Key
+## 🔐 API Key Configuration
 
-Execute o comando:
+Run the command:
 
 ```bash
 > GPT Copilot: Set API key
 ```
 
-Cole sua chave da OpenAI. A chave será armazenada de forma segura.
+Paste your OpenAI key. The key will be stored securely.
 
-## 📦 Comandos Disponíveis
+## 📦 Available Commands
 
-| Comando                                              | Descrição                                |
-| -----------------------------------------------------| ---------------------------------------- |
-| `>Set API Key`                                      | Salva sua API key                        |
-| `>Apagar chave da OpenAI`                           | Deleta a chave armazenada                |
-| `>Corrigir seleção com VSCode GPT Copilot (OpenAI)` | Envia o trecho selecionado para correção |
-| `>Perguntar ao GPT em chat`                         | Abre o painel lateral com o chat GPT     |
+| Command                                              | Description                             |
+| -----------------------------------------------------|------------------------------------------|
+| `>Set API Key`                                      | Saves your API key                       |
+| `>Delete OpenAI key`                                | Deletes the stored key                   |
+| `>Fix selection with VSCode GPT Copilot (OpenAI)`   | Sends the selected snippet for fixing    |
+| `>Ask GPT in chat`                                  | Opens the sidebar panel with GPT chat    |
 
-![Imagem de `Set API Key`](images/README_1.png)
+![Image of `Set API Key`](images/README_1.png)
+![Image of `Delete OpenAI key`](images/README_2.png)
 
-![Imagem de `Apagar chave da OpenAI`](images/README_2.png)
+## 🧠 How to Use
 
+### 1. Inline Suggestions
 
-## 🧠 Como Usar
+* Start typing code.
+* There's a delay of between 5 and 30 seconds for the suggestion to appear.
 
-### 1. Sugestões Inline
+### 2. Code Correction
 
-* Comece a digitar código.
-* Tem um delay de entre 5 e 30 segundos para aparecer a sugestão.
+* Select one or more lines of code.
+* Right-click the selected code and choose `GPT Copilot: Fix selection with VSCode GPT Copilot (OpenAI)`.
+![Correction button image](images/README_6.png)
+![Selection correction image](images/README_7.png)
 
-### 2. Correção de Código
+### 3. Chat with GPT
 
-* Selecione uma ou mais linhas de código.
-* Selecione e faça `Click Direito` no código selecionado e va para a opção `GPT Copilot: Corrigir seleção com VSCode GPT Copilot (OpenAI)`.
-![Imagem do botão de correção](images/README_6.png)
-![Imagem da correção da seleção](images/README_7.png)
+* Run: `Ask GPT in chat`
+* Use the interface to converse with the model.
+* Send messages, attach context files, and receive intelligent responses.
+![Option to ask in chat image](images/README_3.png)
+![Chat window image 1](images/README_4.png)
+![Chat window image 2](images/README_5.png)
 
-### 3. Chat com o GPT
+## 🗂 File Upload (in the panel)
 
-* Execute: `Perguntar ao GPT em chat`
-* Use a interface para conversar com o modelo.
-* Envie mensagens, anexe arquivos de contexto e receba respostas inteligentes.
-![Imagem da opção de perguntar em chat](images/README_3.png)
-![Imagem da janela do chat 1](images/README_4.png)
-![Imagem da janela do chat 2](images/README_5.png)
+* Click **Select File** to upload a file to use as context for the question.
+* The file content is read locally and sent along with your question.
 
+## 🧑‍💻 Development
 
+### Main structure:
 
-## 🗂 Upload de Arquivos (no painel)
+* `extension.ts` – Main extension code
+* `openai.ts` – Communication with OpenAI API
+* `utils.ts` – API key handling and helpers
 
-* Clique em **Selecionar Arquivo** para enviar um arquivo que servirá como contexto da pergunta.
-* O conteúdo do arquivo é lido localmente e enviado junto com sua pergunta.
-
-## 🧑‍💻 Desenvolvimento
-
-### Estrutura principal:
-
-* `extension.ts` – Código da extensão principal
-* `openai.ts` – Comunicação com a API da OpenAI
-* `utils.ts` – Manipulação da chave da API e helpers
-
-## 🧰 Requisitos
+## 🧰 Requirements
 
 * Node.js
 * VS Code
-* Conta e chave da OpenAI
+* OpenAI account and key
 
-## 📄 Licença
+## 📄 License
 
-Este projeto é licenciado sob a [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Desenvolvido com 💙 por Hermes A V Urquijo.
-
+Developed with 💙 by Hermes A V Urquijo.

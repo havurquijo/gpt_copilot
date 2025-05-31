@@ -80,7 +80,7 @@ async function askOpenAI(context, customPrompt, inline) {
         const folder = vscode.workspace.asRelativePath(fileName).split('/').slice(0, -1).join('/');
         const lastLines = document.getText(new vscode.Range(Math.max(0, document.lineCount - 10), 0, document.lineCount, document.lineAt(document.lineCount - 1).range.end.character));
         systemPrompt = `
-    Você é um assistente de código dentro de um editor. Sua tarefa é continuar o código exatamente da última linha fornecida, **sem repetir ou reescrever o que já existe na última linha**. 
+    Você é um assistente de código dentro de um editor. Sua tarefa é continuar o código ou o texto exatamente da última linha fornecida, **sem repetir ou reescrever o que já existe na última linha**. Não retorne markdown senão for a linguagem principal do texto, não formate o texto, não adicione comentários e não explique nada. Apenas complete o código ou o texto.
     Não explique nem comente, apenas complete o código diretamente.
     `.trim();
         fullPrompt = `
@@ -90,8 +90,7 @@ async function askOpenAI(context, customPrompt, inline) {
     Últimas linhas do código:
     ${lastLines}
 
-    Complete o trecho acima, começando exatamente da próxima parte após a última linha. 
-    Não repita o que já está escrito na última linha.
+    Complete o trecho acima, começando exatamente da próxima parte após a última linha.
     `.trim();
     }
     else {
@@ -112,12 +111,12 @@ async function askOpenAI(context, customPrompt, inline) {
                     { role: 'system', content: systemPrompt },
                     { role: 'user', content: fullPrompt }
                 ],
-                temperature: 0.5,
-                max_tokens: 512
+                temperature: 0,
+                max_tokens: 500
             })
         });
         const data = await res.json();
-        //console.log('Resposta da OpenAI:', JSON.stringify(data, null, 2));
+        console.log('Resposta da OpenAI:', JSON.stringify(data, null, 2));
         if (!data || !data.choices || !data.choices[0] || !data.choices[0].message) {
             vscode.window.showErrorMessage('Resposta da OpenAI não veio no formato esperado.');
             return 'Sem resposta da OpenAI.';
